@@ -5,8 +5,9 @@ const routes = require('./routes');
 
 const app = express();
 
-const APP_PORT = 8008;
+const APP_PORT = 8009;
 const APP_HOST = process.env.APP_HOST || '0.0.0.0';
+const APP_KEY = process.env.SECRET_KEY;
 
 
 app.use(express.urlencoded({
@@ -30,3 +31,4 @@ app.listen(APP_PORT,function(err, success){
     console.log("Server running at port" + APP_HOST + ":"+APP_PORT);
   }
 });
+

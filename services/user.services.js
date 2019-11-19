@@ -1,8 +1,7 @@
 const usersDao = require('./../dao/users.dao');
 
+
 function createUser(user){
-  console.log("inside user services");
- 
   return usersDao.create(user);
 }
 
@@ -10,7 +9,6 @@ function createUser(user){
 function findUser(user){
   return usersDao.findUser(user);
 }
-
 
 
 
